@@ -9,14 +9,12 @@ describe('My Dropdown application', () => {
         await (DropdownPage).option1.click()
         await (browser).pause(2000)
         await expect(DropdownPage.Dropdown).toHaveTextContaining(
-            'Option 1'
-        )
+            'Option 1')
 
         await (DropdownPage).Dropdown.click()
         await (DropdownPage).option2.click()
         await (browser).pause(2000)
         await expect(DropdownPage.Dropdown).toHaveTextContaining(
-            'Option 2'
-        )
+            'Option 2')
     })
 })
